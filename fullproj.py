@@ -44,7 +44,7 @@ def Detect(image):
 
 def live():
     cap = cv2.VideoCapture(0)
-    mod = load_model("C://Users//Shalini//Desktop//emotion detection course//model.h5")
+    mod = load_model("model.h5")
     while True:
         _, frame = cap.read()
         gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
